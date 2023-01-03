@@ -5,6 +5,8 @@ import 'package:http/http.dart' as http;
 import '../component/title_page.dart';
 
 class MoviePage extends StatefulWidget {
+  final String url;
+  MoviePage({required this.url});
   @override
   _MoviePageState createState() => _MoviePageState();
 }
@@ -14,7 +16,7 @@ class _MoviePageState extends State<MoviePage> {
   late String moviePlot;
   int randomIndex = 0;
   Future fetchTitle() async {
-    var url = Uri.parse('https://api.npoint.io/c8bb8492ccb141c867d4');
+    var url = Uri.parse(widget.url);
     var response = await http.get(url);
     var title = convert.jsonDecode(response.body) as Map<dynamic, dynamic>;
     randomIndex = rnd();
@@ -36,6 +38,7 @@ class _MoviePageState extends State<MoviePage> {
           return TitlePage(
             moviePlot: moviePlot,
             movieTitle: movieTitle,
+            url: widget.url,
           );
         } else
           return Scaffold(

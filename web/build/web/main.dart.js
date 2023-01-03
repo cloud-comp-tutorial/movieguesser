@@ -19861,20 +19861,25 @@ _.ay=_.ax=_.at=!1},
 Qm:function Qm(){},
 Qn:function Qn(){},
 k7:function k7(){},
-jk:function jk(a,b,c){this.c=a
-this.d=b
-this.a=c},
+jk:function jk(a,b,c,d){var _=this
+_.c=a
+_.d=b
+_.e=c
+_.a=d},
 KN:function KN(a){this.a=null
 this.b=a
 this.c=null},
 a87:function a87(a){this.a=a},
 a85:function a85(){},
 a86:function a86(){},
-a88:function a88(a){this.a=a},
-a84:function a84(){},
-ye:function ye(a,b,c){this.c=a
-this.d=b
-this.a=c},
+a88:function a88(a,b){this.a=a
+this.b=b},
+a84:function a84(a){this.a=a},
+ye:function ye(a,b,c,d){var _=this
+_.c=a
+_.d=b
+_.e=c
+_.a=d},
 OY:function OY(a,b){var _=this
 _.e=_.d=$
 _.f=a
@@ -19887,10 +19892,10 @@ abZ:function abZ(a){this.a=a},
 ac_:function ac_(a,b){this.a=a
 this.b=b},
 abW:function abW(a){this.a=a},
-ac2:function ac2(){},
+ac2:function ac2(a){this.a=a},
 ac1:function ac1(a,b){this.a=a
 this.b=b},
-ac0:function ac0(){},
+ac0:function ac0(a){this.a=a},
 amV(){var s,r="Questrial",q=null,p=A.a6v(q,r,q,q),o=A.aH(["home",new A.aek()],t.N,t.Ab),n=A.dr("MOVIE GUESSER",q,q,q,A.cX(q,q,q,q,q,q,q,q,r,q,q,40,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),m=A.bT(0,600)
 if($.F==null)A.auS()
 s=$.F
@@ -19909,7 +19914,8 @@ this.b=b},
 a97:function a97(){},
 a98:function a98(){},
 a99:function a99(){},
-iq:function iq(a){this.a=a},
+iq:function iq(a,b){this.c=a
+this.a=b},
 Mm:function Mm(a){var _=this
 _.e=_.d=$
 _.f=0
@@ -67710,7 +67716,7 @@ A.KN.prototype={
 L(a){var s,r=null,q=A.i2(18),p=A.dr(this.a.c,r,r,r,A.cX(r,r,r,r,r,r,r,r,r,r,r,25,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.dp,r),o=A.dr(this.a.d,r,r,r,A.cX(r,r,r,r,r,r,r,r,r,r,r,14,r,r,r,r,r,!0,r,r,r,r,r,r,r,r),B.dp,r),n=A.i2(20)
 n=A.tP(A.e4(r,A.v7(!1,!0,A.en(A.dr("Home",r,r,r,r,r,r),r,r),r,!0,r,r,r,B.cn,r,r,r,r,r,new A.a87(a),r,r,r,r),r,r,r,50,r,r,100),B.bF,r,5,new A.cc(n,B.q))
 s=A.i2(20)
-return new A.C8(p,o,A.a([n,A.tP(A.e4(r,A.v7(!1,!0,A.en(A.dr("Play again",r,r,r,r,r,r),r,r),r,!0,r,r,r,B.cn,r,r,r,r,r,new A.a88(a),r,r,r,r),r,r,r,50,r,r,180),B.bF,r,5,new A.cc(s,B.q))],t.F),10,new A.cc(q,B.q),r)}}
+return new A.C8(p,o,A.a([n,A.tP(A.e4(r,A.v7(!1,!0,A.en(A.dr("Play again",r,r,r,r,r,r),r,r),r,!0,r,r,r,B.cn,r,r,r,r,r,new A.a88(this,a),r,r,r,r),r,r,r,50,r,r,180),B.bF,r,5,new A.cc(s,B.q))],t.F),10,new A.cc(q,B.q),r)}}
 A.a87.prototype={
 $0(){A.mW(this.a,!1).a_N(A.ab0(A.vJ(new A.a85(),null,t.z),B.l9,null),new A.a86())},
 $S:0}
@@ -67721,10 +67727,10 @@ A.a86.prototype={
 $1(a){return!1},
 $S:382}
 A.a88.prototype={
-$0(){return A.a_b(this.a,A.vJ(new A.a84(),null,t.z))},
+$0(){return A.a_b(this.b,A.vJ(new A.a84(this.a),null,t.z))},
 $S:0}
 A.a84.prototype={
-$1(a){return new A.iq(null)},
+$1(a){return new A.iq(this.a.a.e,null)},
 $S:58}
 A.ye.prototype={
 ak(){return new A.OY(new A.IW(B.kN,$.aM()),B.k)}}
@@ -67767,11 +67773,11 @@ q=A.i2(20)
 m=A.atX(A.Dx(A.a([h,s,p,j,A.en(new A.JB(g,A.a([new A.cR(B.b2,r,k),new A.cR(B.b2,A.tP(A.e4(k,A.v7(!1,!0,A.en(A.dr("Guess the movie",k,k,k,k,k,k),k,k),k,!0,k,k,k,k,k,k,k,k,k,new A.abZ(l),k,k,k,k),k,k,k,50,k,k,150),B.bF,k,5,new A.cc(q,B.q)),k)],m),k),k,k)],m),B.cg,B.t4,B.cm),new A.os(k),B.a2)
 q=A.dr("Reveal",k,k,k,A.cX(k,k,B.l,k,k,k,k,k,k,k,k,k,k,k,k,k,k,!0,k,k,k,k,k,k,k,k),k,k)
 return A.a2n(k,k,m,new A.ms(A.aj0(B.Bm,B.l,k),B.cn,new A.ac_(l,a),B.kJ,!0,B.l3,q,k))},
-Cp(){var s=null,r=this.a.c,q=this.f,p=B.b.va(q.a.a),o=this.c
-if(r===p.toLowerCase()){o.toString
-A.ahg(new A.ac2(),o,t.z)}else{r=o.N(t.Pu)
-r.toString
-r.f.CU(A.afX(s,s,s,s,B.a6,A.dr("Oops, Movie title is not "+q.a.a,s,s,s,s,s,s),B.fv,B.mo,s,s,s,s,s,s,s))}},
+Cp(){var s=this,r=null,q=s.a.c,p=s.f,o=B.b.va(p.a.a),n=s.c
+if(q===o.toLowerCase()){n.toString
+A.ahg(new A.ac2(s),n,t.z)}else{q=n.N(t.Pu)
+q.toString
+q.f.CU(A.afX(r,r,r,r,B.a6,A.dr("Oops, Movie title is not "+p.a.a,r,r,r,r,r,r),B.fv,B.mo,r,r,r,r,r,r,r))}},
 Co(){var s,r=this,q=null,p=r.f,o=B.b.va(p.a.a)
 if(o.length===1&&B.b.C(r.a.c,o.toLowerCase()))r.aj(new A.ac1(r,o))
 else{s=r.c.N(t.Pu)
@@ -67791,10 +67797,11 @@ A.ac_.prototype={
 $0(){A.ahg(new A.abW(this.a),this.b,t.z)},
 $S:0}
 A.abW.prototype={
-$1(a){return new A.jk("The movie was",this.a.a.c,null)},
+$1(a){var s=this.a.a
+return new A.jk("The movie was",s.c,s.e,null)},
 $S:89}
 A.ac2.prototype={
-$1(a){return new A.jk("Yey","You guessed it right!!",null)},
+$1(a){return new A.jk("Yey","You guessed it right!!",this.a.a.e,null)},
 $S:89}
 A.ac1.prototype={
 $0(){var s,r,q,p,o=this.a,n=o.d
@@ -67805,10 +67812,10 @@ for(n=this.b,r=0;q=o.a.c,r<q.length;++r){if(n.toLowerCase()===s[r]){p=o.e
 p[r]=n}p=o.e
 o.d=B.c.ui(p)}if(o.d===q){n=o.c
 n.toString
-A.ahg(new A.ac0(),n,t.z)}o.f.nF(0,B.IG)},
+A.ahg(new A.ac0(o),n,t.z)}o.f.nF(0,B.IG)},
 $S:0}
 A.ac0.prototype={
-$1(a){return new A.jk("Yey","You guessed it right!!",null)},
+$1(a){return new A.jk("Yey","You guessed it right!!",this.a.a.e,null)},
 $S:89}
 A.aek.prototype={
 $1(a){return new A.jx(null)},
@@ -67834,13 +67841,13 @@ break
 default:break}},
 $S:0}
 A.a97.prototype={
-$1(a){return new A.iq(null)},
+$1(a){return new A.iq("https://api.npoint.io/c8bb8492ccb141c867d4",null)},
 $S:58}
 A.a98.prototype={
-$1(a){return new A.iq(null)},
+$1(a){return new A.iq("https://api.npoint.io/b4ecba425e22389c9fac",null)},
 $S:58}
 A.a99.prototype={
-$1(a){return new A.iq(null)},
+$1(a){return new A.iq("https://api.npoint.io/86f8103ee9438dbc7a2f",null)},
 $S:58}
 A.iq.prototype={
 ak(){return new A.Mm(B.k)}}
@@ -67848,7 +67855,7 @@ A.Mm.prototype={
 tO(){var s=0,r=A.a0(t.z),q=this,p,o,n
 var $async$tO=A.a1(function(a,b){if(a===1)return A.Y(b,r)
 while(true)switch(s){case 0:s=2
-return A.a2(A.ayi(A.qS("https://api.npoint.io/c8bb8492ccb141c867d4")),$async$tO)
+return A.a2(A.ayi(A.qS(q.a.c)),$async$tO)
 case 2:o=b
 n=t.G.a(B.b0.K8(0,A.ay4(A.aw9(o.e).c.a.h(0,"charset")).di(0,o.w),null))
 q.f=B.xG.a7B(250)
@@ -67859,15 +67866,15 @@ return A.Z(null,r)}})
 return A.a_($async$tO,r)},
 L(a){return new A.p7(this.tO(),new A.aad(this),null,t.Am)}}
 A.aad.prototype={
-$2(a,b){var s,r,q=null
+$2(a,b){var s,r,q,p=null
 if(b.a===B.fl){s=this.a
 r=s.e
 r===$&&A.b()
-s=s.d
-s===$&&A.b()
-return new A.ye(s,r,q)}else{s=A.en(new A.tT(q,q,B.m2,q,q,q,q),q,q)
-r=A.eU(q,30,q)
-return A.a2n(q,q,A.Dx(A.a([s,r,A.en(B.h.dJ(this.a.f,2)===0?A.dr("This question is tricky...",q,q,q,A.cX(q,q,B.l,q,q,q,q,q,q,q,q,15,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q):A.dr("Finding you an easy question...",q,q,q,A.cX(q,q,B.l,q,q,q,q,q,q,q,q,15,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),q,q)],t.F),B.cg,B.ho,B.cm),q)}},
+q=s.d
+q===$&&A.b()
+return new A.ye(q,r,s.a.c,p)}else{s=A.en(new A.tT(p,p,B.m2,p,p,p,p),p,p)
+r=A.eU(p,30,p)
+return A.a2n(p,p,A.Dx(A.a([s,r,A.en(B.h.dJ(this.a.f,2)===0?A.dr("This question is tricky...",p,p,p,A.cX(p,p,B.l,p,p,p,p,p,p,p,p,15,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),p,p):A.dr("Finding you an easy question...",p,p,p,A.cX(p,p,B.l,p,p,p,p,p,p,p,p,15,p,p,p,p,p,!0,p,p,p,p,p,p,p,p),p,p),p,p)],t.F),B.cg,B.ho,B.cm),p)}},
 $S:386}
 A.ae3.prototype={
 $1(a){return a.rw("GET",this.a,this.b)},

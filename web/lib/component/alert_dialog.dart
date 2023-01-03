@@ -5,7 +5,8 @@ import '../screens/movie_page.dart';
 class CustomAlertDialog extends StatefulWidget {
   final title;
   final content;
-  CustomAlertDialog({this.title, this.content});
+  final String url;
+  CustomAlertDialog({this.title, this.content, required this.url});
 
   @override
   _CustomAlertDialogState createState() => _CustomAlertDialogState();
@@ -66,7 +67,9 @@ class _CustomAlertDialogState extends State<CustomAlertDialog> {
               child: Center(child: Text('Play again')),
               onTap: () => Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) {
-                return MoviePage();
+                return MoviePage(
+                  url: widget.url,
+                );
               })),
             ),
           ),

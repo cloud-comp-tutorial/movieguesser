@@ -67,7 +67,10 @@ class _HomeState extends State<Home> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) {
-                                      return MoviePage();
+                                      return MoviePage(
+                                        url:
+                                            'https://api.npoint.io/c8bb8492ccb141c867d4',
+                                      );
                                     },
                                   ),
                                 );
@@ -77,7 +80,10 @@ class _HomeState extends State<Home> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) {
-                                      return MoviePage();
+                                      return MoviePage(
+                                        url:
+                                            'https://api.npoint.io/b4ecba425e22389c9fac',
+                                      );
                                     },
                                   ),
                                 );
@@ -87,7 +93,10 @@ class _HomeState extends State<Home> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) {
-                                      return MoviePage();
+                                      return MoviePage(
+                                        url:
+                                            'https://api.npoint.io/86f8103ee9438dbc7a2f',
+                                      );
                                     },
                                   ),
                                 );

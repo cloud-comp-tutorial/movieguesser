@@ -6,11 +6,9 @@ import '../screens/movie_page.dart';
 class TitlePage extends StatefulWidget {
   final String movieTitle;
   final String moviePlot;
-
-  TitlePage({
-    required this.movieTitle,
-    required this.moviePlot,
-  });
+  final String url;
+  TitlePage(
+      {required this.movieTitle, required this.moviePlot, required this.url});
 
   @override
   _TitlePageState createState() => _TitlePageState();
@@ -226,6 +224,7 @@ class _TitlePageState extends State<TitlePage> {
               return CustomAlertDialog(
                 title: 'The movie was',
                 content: widget.movieTitle,
+                url: widget.url,
               );
             },
           );
@@ -251,6 +250,7 @@ class _TitlePageState extends State<TitlePage> {
           return CustomAlertDialog(
             title: "Yey",
             content: "You guessed it right!!",
+            url: widget.url,
           );
         },
       );
@@ -281,6 +281,7 @@ class _TitlePageState extends State<TitlePage> {
               return CustomAlertDialog(
                 title: "Yey",
                 content: "You guessed it right!!",
+                url: widget.url,
               );
             },
           );
