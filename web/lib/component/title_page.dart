@@ -84,7 +84,7 @@ class _TitlePageState extends State<TitlePage> {
                                       fontSize:
                                           MediaQuery.of(context).size.width <
                                                   720
-                                              ? 22
+                                              ? 18
                                               : 36,
                                     ),
                                   ),
@@ -99,7 +99,7 @@ class _TitlePageState extends State<TitlePage> {
                                       fontSize:
                                           MediaQuery.of(context).size.width <
                                                   720
-                                              ? 15
+                                              ? 14
                                               : 18,
                                     ),
                                   ),
@@ -161,8 +161,8 @@ class _TitlePageState extends State<TitlePage> {
               ),
             ),
             Center(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+              child: Wrap(
+                direction: width < 720 ? Axis.vertical : Axis.horizontal,
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -174,7 +174,7 @@ class _TitlePageState extends State<TitlePage> {
                       clipBehavior: Clip.antiAlias,
                       child: Container(
                         height: 50,
-                        width: 180,
+                        width: 150,
                         child: InkWell(
                           child: Center(
                             child: Text(
@@ -198,7 +198,7 @@ class _TitlePageState extends State<TitlePage> {
                       clipBehavior: Clip.antiAlias,
                       child: Container(
                         height: 50,
-                        width: 180,
+                        width: 150,
                         child: InkWell(
                           child: Center(
                             child: Text(
